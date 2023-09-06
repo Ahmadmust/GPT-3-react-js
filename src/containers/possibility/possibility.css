@@ -1,0 +1,69 @@
+.possibility{
+display: flex;
+flex-direction: row;
+}
+.possibility-img{
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-right: 2rem;
+}
+.possibility-img img{
+    width: 100%;
+    height: 100%;
+}
+.possibility-content{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+.possibility-content h4{
+    color: #71E5FF;
+    font-family: var(--font-family);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px; /* 187.5% */
+    margin-bottom: 1rem;
+}
+.possibility-content h4:last-child{
+    color: #FF8A71;
+font-family: var(--font-family);
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 30px; /* 187.5% */
+}
+.possibility-content h1{
+    color: #FFF;
+font-family: var(--font-family);
+font-size: 34px;
+font-style: normal;
+font-weight: 800;
+line-height: 45px; /* 132.353% */
+margin-bottom: 1.5rem;
+}
+.possibility-content p{
+    color: #81AFDD;
+    font-family: var(--font-family);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px; /* 187.5% */
+    margin-bottom: 2rem;
+}
+
+@media screen and (max-width:950px){
+    .possibility{
+        flex-direction: column;
+    }
+    .possibility-img{
+        margin: 1rem 0;
+    }
+    .possibility-content{
+        margin-top: 2rem;
+    }
+}
